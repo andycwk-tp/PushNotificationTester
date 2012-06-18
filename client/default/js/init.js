@@ -51,9 +51,10 @@ function successCallback(e) {
   result.innerHTML += "Now registering with UrbanAirship...<br>";
   e.ts = new Date().getTime();
   $fh.act({act:'registerUA', req:e}, function(res){
-    if(res.result == 'ok'){
+    if(res.result.result == 'ok'){
       result.innerHTML += "Registration Finishied.<br>";
-      result.innerHTML += res.status + "<br>" + res.error
+      result.innerHTML += res.result.status + "<br>" + res.result.error + <br>;
+      result.innerHTML += res.res2;
     } else {
       result.innerHTML += "Error when registering with UrbanAirship.<br>";
     }
