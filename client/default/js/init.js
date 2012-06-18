@@ -53,7 +53,7 @@ function successCallback(e) {
   $fh.act({act:'registerUA', req:e}, function(res){
     if(res.result.result == 'ok'){
       result.innerHTML += "Registration Finishied.<br>";
-      result.innerHTML += res.result.status + "<br>" + res.result.error + <br>;
+      result.innerHTML += res.result.status + "<br>" + res.result.error + ""<br>"";
       result.innerHTML += res.res2;
     } else {
       result.innerHTML += "Error when registering with UrbanAirship.<br>";
