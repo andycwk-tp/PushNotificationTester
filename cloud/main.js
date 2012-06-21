@@ -19,7 +19,7 @@ function registerUA(){
    */
    var res2 = deviceId + '  ' + platform;
   var res = $fh.push({'act':'register', 'type':'dev', 'params':{'id':deviceId, 'platform':platform}});
-  return {result: res, feedback: res2};
+  return {result: res};
 }
 
 function pushMessages(){
